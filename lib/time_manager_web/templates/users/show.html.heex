@@ -1,0 +1,18 @@
+<h1>Show Users</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @users.title %>
+  </li>
+
+  <li>
+    <strong>Body:</strong>
+    <%= @users.body %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.users_path(@conn, :edit, @users) %></span> |
+<span><%= link "Back", to: Routes.users_path(@conn, :index) %></span>
